@@ -1,0 +1,77 @@
+/* General body styling */
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+section {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Title styling */
+.game--title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Game container and grid styling */
+.game--container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    margin: 0 auto 30px;
+}
+
+/* Individual cell styling */
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #87CEFA;
+    border: 3px solid #4682B4;
+    border-radius: 8px;
+    font-family: "Permanent Marker", cursive;
+    font-size: 3rem;
+    color: #ffffff;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #4682B4;
+    transform: scale(1.1);
+}
+
+/* Status message styling */
+.game--status {
+    font-size: 1.5rem;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Restart button styling */
+.game--restart {
+    background-color: #FFA07A;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.game--restart:hover {
+    background-color: #FF6347;
+}
